@@ -148,7 +148,10 @@ class AllProductsSection extends Component {
     return (
       <div className="all-products-section">
         {/* TODO: Update the below element */}
-        <FiltersGroup />
+        <FiltersGroup
+          categoriesList={categoryOptions}
+          ratingsList={ratingsList}
+        />
 
         {isLoading ? this.renderLoader() : this.renderProductsList()}
       </div>
